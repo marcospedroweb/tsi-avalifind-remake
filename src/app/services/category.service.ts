@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Category } from '../model/category';
 import { environment } from 'src/environments/environment';
+import { Category } from '../model/category';
 
 @Injectable({
   providedIn: 'root'
@@ -19,8 +19,8 @@ export class CategoryService {
     return this.http.post<Category>(`${environment.apiEndpoint}/categories`, category);
   }
 
-  update(media: Category): Observable<Category> {
-    return this.http.put<Category>(`${environment.apiEndpoint}/categories/${media.id}`, media);
+  update(category: Category): Observable<Category> {
+    return this.http.put<Category>(`${environment.apiEndpoint}/categories/${category.id}`, category);
   }
 
   delete(id: number): Observable<any> {

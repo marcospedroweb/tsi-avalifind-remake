@@ -1,48 +1,58 @@
 <header class="bg-primary">
   <div class="container-xxl">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/index"><img src="assets/Avalifind-logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="container-fluid justify-content-center justify-content-sm-between flex-column flex-sm-row">
+        <a class="navbar-brand" routerLink="/"><img src="assets/Avalifind-logo.svg" alt=""></a>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page">Mídias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" aria-current="page" routerLink="/category">Criar Categoria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" aria-current="page" routerLink="/media/crud">Criar Mídias</a>
             </li>
           </ul>
-          <div>
-            <a href="#" class="btn btn-secondary me-2">Login</a>
-            <a href="#" class="btn btn-primary">Registrar</a>
-          </div>
         </div>
+        <div class="mt-3 mt-sm-0">
+          <a href="#" class="btn btn-secondary me-2">Login</a>
+          <a href="#" class="btn btn-primary">Registrar</a>
+        </div>
+        <button class="navbar-toggler mt-3 mt-sm-0 bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
   </div>
 </header>
 <router-outlet></router-outlet>
-<footer>
-
+<footer class="mt-5 bg-primary text-white py-5">
+  <div class="container-xxl">
+    <div class="d-flex justify-content-center align-items-start">
+      <ul class="list-unstyled me-5">
+        <li><a href="" class="link-primary">Categorias</a>
+          <ul class="list-unstyled">
+            <li><a href="" class="link-secondary">Filmes</a></li>
+            <li><a href="" class="link-secondary">Series</a></li>
+            <li><a href="" class="link-secondary">Animes</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="list-unstyled">
+        <li><a href="" class="link-primary">Sobre a empresa</a>
+          <ul class="list-unstyled">
+            <li><a href="" class="link-secondary">Filmes</a></li>
+            <li><a href="" class="link-secondary">Series</a></li>
+            <li><a href="" class="link-secondary">Animes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <span class="mx-auto mt-5 d-inline-block">Todos os direitos reservados. &copy; 2022</span>
+    </div>
+  </div>
 </footer>

@@ -6,5 +6,5 @@ export class Media {
   wish = 0;
   have = 0;
   finished = 0;
-  category_id = '';
+  category = '';
 }

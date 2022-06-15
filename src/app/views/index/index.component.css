@@ -1,3 +1,64 @@
+/* General */
+/* Typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #f0f0f0 !important;
+}
+
+/* Background */
+.bg-primary {
+  background-color: #262626 !important;
+}
+
+/* Btn */
+.btn {
+  transition: all .25s ease-in;
+}
+
+.btn-outline-primary {
+  border: 1px solid #1fab89 !important;
+  color: #1fab89;
+}
+
+.btn-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #1fab89 !important;
+  border: 1px solid #1fab89 !important;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #007b5c;
+  border: 1px solid #007b5c;
+}
+
+.btn-primary:active,
+.btn-outline-primary:active {
+  background-color: #60ddb9;
+  border: 1px solid #60ddb9;
+}
+
+.btn-primary:focus,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(31, 171, 137, .25) !important;
+}
+
+.btn-secondary {
+  background-color: #383838;
+  border: 0;
+}
+
+.btn-secondary:hover {
+  background-color: #474747;
+}
+
 #main-banner {
   position: relative;
   background-position: center;
@@ -13,4 +74,10 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(28, 28, 28, .75);
+}
+
+#banner-text {
+  z-index: 1050;
+  color: #fff;
+  text-align: center;
 }

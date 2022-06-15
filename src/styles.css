@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+:root {
+  --primary-color: #1fab89;
+  --secondary-color: #555;
+  --btn-normal: #1fab89;
+  --btn-hover: #007b5c;
+  --btn-active: #60ddb9;
+  --primary-dark-color: #1C1C1C;
+  --secondary-dark-color: #383838;
+}
+
 html,
 body {
   height: 100%;
@@ -9,4 +19,53 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #1C1C1C !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif !important;
+  color: #f0f0f0 !important;
+}
+
+
+.navbar-brand img {
+  max-height: 24px;
+}
+
+#mainNavbar li a {
+  color: #fff;
+}
+
+.display-5 {
+  font-size: 3.157em !important;
+  font-weight: 600 !important;
+}
+
+.h2 {
+  font-size: 2.369em !important;
+  font-weight: 600 !important;
+}
+
+.h3 {
+  font-size: 1.777em !important;
+  font-weight: 500 !important;
+}
+
+.h4 {
+  font-size: 1.333em !important;
+  font-weight: 500 !important;
+}
+
+.h5 {
+  font-size: 1.333em !important;
+  font-weight: 400 !important;
+}
+
+.mat-input-element {
+  caret-color: #fff !important;
 }
