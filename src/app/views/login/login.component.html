@@ -1,0 +1,37 @@
+<div class="container-xxl">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-11 row flex-column flex-lg-row justify-content-center align-items-center">
+      <div class=" col-12 col-lg-5">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit($event)"
+          class="main-form bg-primary p-4 d-flex flex-column rounded">
+          <h2 class="h2 text-center">Fazer login</h2>
+          <mat-form-field class="mb-3">
+            <input matInput placeholder="Email" type="email" formControlName="email" [(ngModel)]="user.email"
+              [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="mb-3">
+            <input matInput placeholder="Senha" [type]="hide ? 'password' : 'text'" formControlName="password"
+              [(ngModel)]="user.password" required>
+            <mat-icon id="icon-password" matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+            <mat-hint align="start">Sua senha deve ter no minimo 4 caracteres e no máximo 20.</mat-hint>
+          </mat-form-field>
+          <div class="text-center mt-4">
+            <button class="btn btn-primary">Fazer login</button>
+          </div>
+        </form>
+      </div>
+      <div class="d-none d-lg-flex" id="separator-lg"><span class="my-2">OU</span></div>
+      <div class="d-flex d-lg-none" id="separator-sm"><span class="mx-2">OU</span></div>
+      <div class="col-12 col-lg-5">
+        <div class="bg-primary p-4 rounded">
+          <h2 class="h2 text-center">Ainda não tem uma conta?</h2>
+          <div class="text-center mt-4">
+            <a class="btn btn-outline-primary" routerLink="/register">Criar conta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
